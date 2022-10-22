@@ -10,9 +10,9 @@ import {catchError} from 'rxjs/operators'
 import { StockPriceDetailResponse } from '../models/StockPriceDetailResponse';
 import { CompanyDetails } from '../models/CompanyDetail';
 
-const BACKEND_URL = environment.gateway + 'gateway/stock/api/v1.0/market/stock/get/';
+const BACKEND_URL = 'https://gateway-applicaton.azurewebsites.net/gateway/stock/api/v1.0/market/stock/get/';
 
-const COMPANY_URL = environment.gateway + 'gateway/company/api/v1.0/market/company/getall';
+const COMPANY_URL =  'https://gateway-applicaton.azurewebsites.net/gateway/company/api/v1.0/market/company/getall';
 
 @Injectable({
   providedIn: 'root'
